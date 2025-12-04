@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Сотрудники — NiNo</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="/">NiNo<span>Next</span></a>
+        <div class="nav__links">
+          <a href="/groups.html">Группы</a>
+          <a href="/subjects.html">Предметы</a>
+          <a href="/staff.html">Сотрудники</a>
+          <a href="/lessons.html">Расписание</a>
+          <a href="/homework.html">Домашние</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <h1>Сотрудники</h1>
+      <div id="staff" class="list-grid">Загрузка...</div>
+    </main>
+
+    <script type="module" src="/src/list.js"></script>
+    <script>
+      window.PAGE = { endpoint: '/api/staff/' , container: 'staff' }
+    </script>
+  </body>
+</html>
